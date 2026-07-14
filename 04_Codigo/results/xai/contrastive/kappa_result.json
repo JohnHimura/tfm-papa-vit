@@ -1,0 +1,31 @@
+{
+  "n_pares": 40,
+  "descripcion": "Juicio humano contrastivo OE5. E1=integrante del equipo; E2=externo al proyecto; E3=autor del bloque experimental (familiarizado con los metodos, condicion de contraste). Etiquetas descegadas con ab_key.json.",
+  "preferencias": {
+    "E1": {
+      "tie": 17,
+      "resnet": 13,
+      "vit": 10
+    },
+    "E2": {
+      "vit": 20,
+      "tie": 15,
+      "resnet": 5
+    },
+    "E3": {
+      "resnet": 38,
+      "tie": 1,
+      "vit": 1
+    }
+  },
+  "cohen_kappa": {
+    "E1-E2": 0.1111,
+    "E1-E3": 0.0361,
+    "E2-E3": -0.0182
+  },
+  "acuerdo_observado": {
+    "E1-E2": 0.4,
+    "E1-E3": 0.35,
+    "E2-E3": 0.125
+  }
+}

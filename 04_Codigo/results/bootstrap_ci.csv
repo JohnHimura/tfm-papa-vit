@@ -1,0 +1,5 @@
+modelo,label,point_estimate,ci_low,ci_high,boot_mean,boot_std,n,n_boot,base
+vit_base_patch16_224,ViT-Base/16,0.953342,0.922820,0.975433,0.952646,0.013462,462,10000,holdout
+resnet50,ResNet-50,0.909321,0.867986,0.940382,0.907801,0.018377,462,10000,holdout
+efficientnet_b0,EfficientNet-B0,0.871882,0.825677,0.908356,0.869793,0.021070,462,10000,holdout
+mobilenetv2_100,MobileNetV2,0.862045,0.815668,0.898615,0.859868,0.021087,462,10000,holdout

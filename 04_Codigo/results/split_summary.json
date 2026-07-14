@@ -1,0 +1,26 @@
+{
+  "train_cv": {
+    "total": 2614,
+    "by_class": {
+      "Bacteria": 483,
+      "Fungi": 636,
+      "Healthy": 171,
+      "Nematode": 58,
+      "Pest": 519,
+      "Phytopthora": 295,
+      "Virus": 452
+    }
+  },
+  "test": {
+    "total": 462,
+    "by_class": {
+      "Bacteria": 86,
+      "Fungi": 112,
+      "Healthy": 30,
+      "Nematode": 10,
+      "Pest": 92,
+      "Phytopthora": 52,
+      "Virus": 80
+    }
+  }
+}

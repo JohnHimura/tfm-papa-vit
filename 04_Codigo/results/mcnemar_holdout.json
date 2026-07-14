@@ -1,0 +1,110 @@
+{
+  "mobilenetv2_100__vs__resnet50": {
+    "table": [
+      [
+        397,
+        8
+      ],
+      [
+        28,
+        29
+      ]
+    ],
+    "n_disagree": 36,
+    "b_only_A_correct": 8,
+    "c_only_B_correct": 28,
+    "statistic": 10.027777777777779,
+    "pvalue": 0.001541969568939927,
+    "exact": false
+  },
+  "mobilenetv2_100__vs__efficientnet_b0": {
+    "table": [
+      [
+        393,
+        12
+      ],
+      [
+        21,
+        36
+      ]
+    ],
+    "n_disagree": 33,
+    "b_only_A_correct": 12,
+    "c_only_B_correct": 21,
+    "statistic": 1.9393939393939394,
+    "pvalue": 0.16373435432459227,
+    "exact": false
+  },
+  "mobilenetv2_100__vs__vit_base_patch16_224": {
+    "table": [
+      [
+        400,
+        5
+      ],
+      [
+        42,
+        15
+      ]
+    ],
+    "n_disagree": 47,
+    "b_only_A_correct": 5,
+    "c_only_B_correct": 42,
+    "statistic": 27.574468085106382,
+    "pvalue": 1.5116098162071268e-07,
+    "exact": false
+  },
+  "resnet50__vs__efficientnet_b0": {
+    "table": [
+      [
+        406,
+        19
+      ],
+      [
+        8,
+        29
+      ]
+    ],
+    "n_disagree": 27,
+    "b_only_A_correct": 19,
+    "c_only_B_correct": 8,
+    "statistic": 3.7037037037037037,
+    "pvalue": 0.054291828366854644,
+    "exact": false
+  },
+  "resnet50__vs__vit_base_patch16_224": {
+    "table": [
+      [
+        421,
+        4
+      ],
+      [
+        21,
+        16
+      ]
+    ],
+    "n_disagree": 25,
+    "b_only_A_correct": 4,
+    "c_only_B_correct": 21,
+    "statistic": 10.24,
+    "pvalue": 0.0013742758758317208,
+    "exact": false
+  },
+  "efficientnet_b0__vs__vit_base_patch16_224": {
+    "table": [
+      [
+        410,
+        4
+      ],
+      [
+        32,
+        16
+      ]
+    ],
+    "n_disagree": 36,
+    "b_only_A_correct": 4,
+    "c_only_B_correct": 32,
+    "statistic": 20.25,
+    "pvalue": 6.795346249477419e-06,
+    "exact": false
+  }
+}

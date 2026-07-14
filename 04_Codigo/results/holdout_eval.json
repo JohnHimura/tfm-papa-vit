@@ -1,0 +1,173 @@
+{
+  "n_holdout": 462,
+  "models": {
+    "mobilenetv2_100": {
+      "individual": {
+        "mode": "best_individual",
+        "fold": 2,
+        "seed": 2026,
+        "checkpoint": "final__mobilenetv2_100_fold2_seed2026_best.pt",
+        "accuracy": 0.8636363636363636,
+        "balanced_accuracy": 0.861343465985601,
+        "macro_f1": 0.8319431918839761,
+        "weighted_f1": 0.8643725708306204,
+        "macro_precision": 0.8145137600494744,
+        "macro_recall": 0.861343465985601,
+        "per_class_f1": {
+          "Bacteria": 0.9529411764705882,
+          "Fungi": 0.8246445497630331,
+          "Healthy": 0.8064516129032258,
+          "Nematode": 0.6153846153846154,
+          "Pest": 0.8222222222222222,
+          "Phytopthora": 0.897196261682243,
+          "Virus": 0.9047619047619048
+        }
+      },
+      "ensemble": {
+        "mode": "ensemble_15",
+        "n_models": 15,
+        "accuracy": 0.8766233766233766,
+        "balanced_accuracy": 0.8939182591446784,
+        "macro_f1": 0.8620451955829946,
+        "weighted_f1": 0.8773693331682766,
+        "macro_precision": 0.8414728790883214,
+        "macro_recall": 0.8939182591446784,
+        "per_class_f1": {
+          "Bacteria": 0.9824561403508771,
+          "Fungi": 0.8262910798122066,
+          "Healthy": 0.8055555555555556,
+          "Nematode": 0.782608695652174,
+          "Pest": 0.8461538461538461,
+          "Phytopthora": 0.8867924528301887,
+          "Virus": 0.9044585987261147
+        }
+      }
+    },
+    "resnet50": {
+      "individual": {
+        "mode": "best_individual",
+        "fold": 2,
+        "seed": 137,
+        "checkpoint": "final__resnet50_fold2_seed137_best.pt",
+        "accuracy": 0.8874458874458875,
+        "balanced_accuracy": 0.9003922794909361,
+        "macro_f1": 0.8788345200297588,
+        "weighted_f1": 0.8878235445166228,
+        "macro_precision": 0.8632116347179277,
+        "macro_recall": 0.9003922794909361,
+        "per_class_f1": {
+          "Bacteria": 0.9642857142857143,
+          "Fungi": 0.8506787330316742,
+          "Healthy": 0.8529411764705882,
+          "Nematode": 0.8181818181818182,
+          "Pest": 0.8539325842696629,
+          "Phytopthora": 0.9038461538461539,
+          "Virus": 0.9079754601226994
+        }
+      },
+      "ensemble": {
+        "mode": "ensemble_15",
+        "n_models": 15,
+        "accuracy": 0.9199134199134199,
+        "balanced_accuracy": 0.9259518888834215,
+        "macro_f1": 0.9093208016636406,
+        "weighted_f1": 0.920147290326803,
+        "macro_precision": 0.8963350929564182,
+        "macro_recall": 0.9259518888834215,
+        "per_class_f1": {
+          "Bacteria": 0.9883720930232558,
+          "Fungi": 0.8807339449541285,
+          "Healthy": 0.8656716417910447,
+          "Nematode": 0.8571428571428571,
+          "Pest": 0.9120879120879121,
+          "Phytopthora": 0.9245283018867925,
+          "Virus": 0.9367088607594937
+        }
+      }
+    },
+    "efficientnet_b0": {
+      "individual": {
+        "mode": "best_individual",
+        "fold": 3,
+        "seed": 137,
+        "checkpoint": "final__efficientnet_b0_fold3_seed137_best.pt",
+        "accuracy": 0.8744588744588745,
+        "balanced_accuracy": 0.8633165566918998,
+        "macro_f1": 0.8249976250466811,
+        "weighted_f1": 0.8794887299441909,
+        "macro_precision": 0.809402478541305,
+        "macro_recall": 0.8633165566918998,
+        "per_class_f1": {
+          "Bacteria": 0.9764705882352941,
+          "Fungi": 0.8309178743961353,
+          "Healthy": 0.8181818181818182,
+          "Nematode": 0.45161290322580644,
+          "Pest": 0.8571428571428571,
+          "Phytopthora": 0.9245283018867925,
+          "Virus": 0.9161290322580645
+        }
+      },
+      "ensemble": {
+        "mode": "ensemble_15",
+        "n_models": 15,
+        "accuracy": 0.8961038961038961,
+        "balanced_accuracy": 0.9082756210518742,
+        "macro_f1": 0.8718824218118076,
+        "weighted_f1": 0.8971803805718023,
+        "macro_precision": 0.8490342987210227,
+        "macro_recall": 0.9082756210518742,
+        "per_class_f1": {
+          "Bacteria": 0.9941520467836257,
+          "Fungi": 0.8651162790697674,
+          "Healthy": 0.8405797101449275,
+          "Nematode": 0.72,
+          "Pest": 0.8651685393258427,
+          "Phytopthora": 0.9056603773584906,
+          "Virus": 0.9125
+        }
+      }
+    },
+    "vit_base_patch16_224": {
+      "individual": {
+        "mode": "best_individual",
+        "fold": 0,
+        "seed": 137,
+        "checkpoint": "final__vit_base_patch16_224_fold0_seed137_best.pt",
+        "accuracy": 0.922077922077922,
+        "balanced_accuracy": 0.9024159527698457,
+        "macro_f1": 0.9007852877935651,
+        "weighted_f1": 0.9222005265559451,
+        "macro_precision": 0.9005795401391955,
+        "macro_recall": 0.9024159527698457,
+        "per_class_f1": {
+          "Bacteria": 0.9883720930232558,
+          "Fungi": 0.8711111111111111,
+          "Healthy": 0.9830508474576272,
+          "Nematode": 0.7,
+          "Pest": 0.9090909090909091,
+          "Phytopthora": 0.8909090909090909,
+          "Virus": 0.9629629629629629
+        }
+      },
+      "ensemble": {
+        "mode": "ensemble_15",
+        "n_models": 15,
+        "accuracy": 0.9567099567099567,
+        "balanced_accuracy": 0.9682436550882312,
+        "macro_f1": 0.9533421596349052,
+        "weighted_f1": 0.9567234197943971,
+        "macro_precision": 0.9409087060124819,
+        "macro_recall": 0.9682436550882312,
+        "per_class_f1": {
+          "Bacteria": 0.9883720930232558,
+          "Fungi": 0.9363636363636364,
+          "Healthy": 0.9836065573770492,
+          "Nematode": 0.9090909090909091,
+          "Pest": 0.9560439560439561,
+          "Phytopthora": 0.9433962264150944,
+          "Virus": 0.9565217391304348
+        }
+      }
+    }
+  }
+}

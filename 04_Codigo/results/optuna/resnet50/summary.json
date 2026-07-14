@@ -1,0 +1,16 @@
+{
+  "model": "resnet50",
+  "n_trials": 30,
+  "n_complete": 3,
+  "n_pruned": 27,
+  "n_failed": 0,
+  "best_value": 0.8915513263270102,
+  "best_params": {
+    "lr_head": 0.00010754807276403046,
+    "lr_backbone": 0.0009147708792455822,
+    "weight_decay": 0.001877462814914845,
+    "label_smoothing": 0.14204428145852238,
+    "batch_size": 16
+  },
+  "best_trial_number": 11
+}

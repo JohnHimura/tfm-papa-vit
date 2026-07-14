@@ -1,0 +1,69 @@
+# Repositorio de CÓDIGO. Datos, modelos, resultados y documento van aparte (Drive / DOI).
+
+# Entornos y cachés
+**/.venv/
+**/__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Datos y modelos (no van al repo)
+03_Dataset/
+Potato Leaf Disease Dataset in Uncontrolled Environment/
+04_Codigo/models/
+*.pt
+*.zip
+
+# Salidas que genera el propio código al ejecutarse.
+# Excepción: los ficheros de evidencia que respaldan las tablas de la memoria SÍ se versionan
+# (se añadieron con `git add -f`; ver la sección "Evidencia" del README).
+04_Codigo/results/
+04_Codigo/mlruns/
+04_Codigo/optuna/
+
+# Fuera del repo: no reportado en la memoria o utilitario local
+04_Codigo/build/shutdown_when_done.py
+04_Codigo/build/shutdown_when_done_normfix.py
+04_Codigo/src/run_vit_normfix.py
+04_Codigo/src/run_oe4_ablation.py
+EMPEZAR_AQUI.md
+
+# Carpetas del proyecto que no son código
+01_Documentacion_UNIR/
+02_Estado_del_Arte/
+05_Documento_TFM/
+06_Presentacion/
+07_NotebookLM/
+08_Reuniones_Director/
+09_Correos/
+
+# Documentos auxiliares y materiales internos
+GUIA_REPOSITORIO.md
+ENTREGA3_TAREAS_ANGELA.md
+ZENODO_METADATA.md
+CRONOGRAMA_TFM.xlsx
+**/CLAUDE.md
+.claude/
+**/DIAGNOSTICO_*.md
+
+# Utilidades ajenas al experimento
+04_Codigo/capturar_pagina_campus.py
+04_Codigo/generar_tfm_final.py
+04_Codigo/src/export_mlflow_summary.py
+campus_monitor.py
+
+# Otros volcados/depuración
+v5_lines_DEBUG.txt
+*_DEBUG.txt
+
+# Ejecución del pipeline: logs de runtime (ruido, no reproducibilidad)
+04_Codigo/build/pipeline_logs/
+# Armado del documento .docx (el documento va aparte; contiene el texto de la tesis)
+04_Codigo/build/_content_e3.py
+04_Codigo/build/_assemble_e3.py
+
+# Sistema
+desktop.ini
+**/desktop.ini
+.DS_Store
+.vscode/
+.idea/

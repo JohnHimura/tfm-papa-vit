@@ -1,0 +1,82 @@
+{
+  "descripcion": "Comparacion ViT preentrenamiento 21k (default timm, augreg2_in21k_ft_in1k) vs 1k-only (augreg_in1k) bajo el MISMO protocolo (5 folds x 3 seeds, mismos best_params Optuna). Solo cambia el tag de pesos de partida.",
+  "holdout_n": 462,
+  "vit_21k": {
+    "model_name_timm": "vit_base_patch16_224 (default = augreg2_in21k_ft_in1k)",
+    "pretrain": "ImageNet-21k -> ft 1k",
+    "macro_f1": 0.9533421596349052,
+    "macro_f1_reportado_doc": 0.9533,
+    "ci95": [
+      0.922820261619199,
+      0.9754334778545967
+    ],
+    "source_npz": "vit_base_patch16_224_ensemble.npz"
+  },
+  "vit_1k": {
+    "model_name_timm": "vit_base_patch16_224.augreg_in1k",
+    "pretrain": "ImageNet-1k only (augreg)",
+    "macro_f1": 0.922835467847255,
+    "ci95": [
+      0.885032334801392,
+      0.9507297525532572
+    ],
+    "source_npz": "vit1k_ensemble.npz",
+    "n_checkpoints": 15
+  },
+  "delta_macro_f1_pts": -3.05,
+  "mcnemar_1k_vs_21k": {
+    "pvalue": 0.002599477767944336,
+    "statistic": 4.0,
+    "n_disagree": 23,
+    "exact": true,
+    "significativo_0.05": true
+  },
+  "mcnemar_1k_vs_resnet50": {
+    "pvalue": 0.8388197422027588,
+    "statistic": 11.0,
+    "n_disagree": 24,
+    "exact": true,
+    "significativo_0.05": false
+  },
+  "f1_por_clase": {
+    "Bacteria": {
+      "f1_21k": 0.9883720930232558,
+      "f1_1k": 0.9824561403508771,
+      "delta_pts": -0.59
+    },
+    "Fungi": {
+      "f1_21k": 0.9363636363636364,
+      "f1_1k": 0.8785046728971962,
+      "delta_pts": -5.79
+    },
+    "Healthy": {
+      "f1_21k": 0.9836065573770492,
+      "f1_1k": 0.9836065573770492,
+      "delta_pts": 0.0
+    },
+    "Nematode": {
+      "f1_21k": 0.9090909090909091,
+      "f1_1k": 0.8571428571428571,
+      "delta_pts": -5.19
+    },
+    "Pest": {
+      "f1_21k": 0.9560439560439561,
+      "f1_1k": 0.9032258064516129,
+      "delta_pts": -5.28
+    },
+    "Phytopthora": {
+      "f1_21k": 0.9433962264150944,
+      "f1_1k": 0.9158878504672897,
+      "delta_pts": -2.75
+    },
+    "Virus": {
+      "f1_21k": 0.9565217391304348,
+      "f1_1k": 0.9390243902439024,
+      "delta_pts": -1.75
+    }
+  },
+  "sanidad": {
+    "holdout_mismo_orden_que_21k": true,
+    "holdout_mismo_orden_que_resnet50": true
+  }
+}

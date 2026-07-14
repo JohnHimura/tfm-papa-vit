@@ -1,0 +1,30 @@
+[
+  {
+    "model": "mobilenetv2_100",
+    "params_M": 2.232839,
+    "trainable_M": 2.232839,
+    "flops_G": 0.599134464,
+    "ckpt_MB_fp32": 8.931356
+  },
+  {
+    "model": "resnet50",
+    "params_M": 23.522375,
+    "trainable_M": 23.522375,
+    "flops_G": 8.263417856,
+    "ckpt_MB_fp32": 94.0895
+  },
+  {
+    "model": "efficientnet_b0",
+    "params_M": 4.016515,
+    "trainable_M": 4.016515,
+    "flops_G": 0.769215424,
+    "ckpt_MB_fp32": 16.06606
+  },
+  {
+    "model": "vit_base_patch16_224",
+    "params_M": 85.804039,
+    "trainable_M": 85.804039,
+    "flops_G": 33.695476224,
+    "ckpt_MB_fp32": 343.216156
+  }
+]

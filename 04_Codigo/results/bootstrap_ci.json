@@ -1,0 +1,60 @@
+{
+  "base": "holdout",
+  "base_desc": "holdout-ensemble (462 imagenes test, ensemble 15 replicas)",
+  "seed": 2026,
+  "n_boot": 10000,
+  "models": {
+    "vit_base_patch16_224": {
+      "point_estimate": 0.9533421596349052,
+      "ci_low": 0.922820261619199,
+      "ci_high": 0.9754334778545967,
+      "boot_mean": 0.9526456535425414,
+      "boot_std": 0.01346195191369404,
+      "n": 462,
+      "n_boot": 10000,
+      "alpha": 0.05,
+      "seed": 2026,
+      "label": "ViT-Base/16",
+      "base": "holdout"
+    },
+    "resnet50": {
+      "point_estimate": 0.9093208016636406,
+      "ci_low": 0.8679859123320757,
+      "ci_high": 0.940381823771002,
+      "boot_mean": 0.9078005783570896,
+      "boot_std": 0.018376828999882376,
+      "n": 462,
+      "n_boot": 10000,
+      "alpha": 0.05,
+      "seed": 2026,
+      "label": "ResNet-50",
+      "base": "holdout"
+    },
+    "efficientnet_b0": {
+      "point_estimate": 0.8718824218118076,
+      "ci_low": 0.8256773580544093,
+      "ci_high": 0.9083556963908315,
+      "boot_mean": 0.8697931207963582,
+      "boot_std": 0.021070257770581944,
+      "n": 462,
+      "n_boot": 10000,
+      "alpha": 0.05,
+      "seed": 2026,
+      "label": "EfficientNet-B0",
+      "base": "holdout"
+    },
+    "mobilenetv2_100": {
+      "point_estimate": 0.8620451955829946,
+      "ci_low": 0.8156675638408387,
+      "ci_high": 0.8986150955647901,
+      "boot_mean": 0.8598680463956473,
+      "boot_std": 0.02108660289333348,
+      "n": 462,
+      "n_boot": 10000,
+      "alpha": 0.05,
+      "seed": 2026,
+      "label": "MobileNetV2",
+      "base": "holdout"
+    }
+  }
+}

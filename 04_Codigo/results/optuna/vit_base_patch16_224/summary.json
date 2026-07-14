@@ -1,0 +1,16 @@
+{
+  "model": "vit_base_patch16_224",
+  "n_trials": 30,
+  "n_complete": 6,
+  "n_pruned": 24,
+  "n_failed": 0,
+  "best_value": 0.9111843741070863,
+  "best_params": {
+    "lr_head": 6.69961164037885e-05,
+    "lr_backbone": 4.536426654545621e-05,
+    "weight_decay": 0.002209486025576837,
+    "label_smoothing": 0.061251729040742456,
+    "batch_size": 16
+  },
+  "best_trial_number": 21
+}

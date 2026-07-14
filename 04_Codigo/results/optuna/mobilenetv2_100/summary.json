@@ -1,0 +1,16 @@
+{
+  "model": "mobilenetv2_100",
+  "n_trials": 30,
+  "n_complete": 3,
+  "n_pruned": 27,
+  "n_failed": 0,
+  "best_value": 0.7703940678054911,
+  "best_params": {
+    "lr_head": 0.0009099331358034521,
+    "lr_backbone": 0.0009915049054117933,
+    "weight_decay": 0.0004534870859101436,
+    "label_smoothing": 0.07440619682545714,
+    "batch_size": 32
+  },
+  "best_trial_number": 14
+}
